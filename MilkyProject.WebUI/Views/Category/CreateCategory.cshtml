@@ -1,0 +1,16 @@
+﻿@model MilkyProject.DtoLayer.CategoryDtos.CreateCategoryDto
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<form method="post">
+    <div classs="container">
+        <br /><br />
+        <label>Kategori Adu</label>
+        <input type="text" asp-for="CategoryName" class="form-control" />
+    </div>
+    <br />
+    <button class="btn btn-primary">
+        Kategoryi Ekle
+    </button>
+</form>
