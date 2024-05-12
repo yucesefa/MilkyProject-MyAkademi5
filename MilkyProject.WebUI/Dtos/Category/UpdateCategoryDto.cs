@@ -1,4 +1,4 @@
-﻿namespace MilkyProject.WebUI.Dtos.CategoryDtos
+﻿namespace MilkyProject.WebUI.Dtos.Category
 {
     public class UpdateCategoryDto
     {

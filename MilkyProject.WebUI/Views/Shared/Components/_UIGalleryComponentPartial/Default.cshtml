@@ -1,0 +1,24 @@
+﻿@model List<MilkyProject.WebUI.Dtos.Gallery.ResultGalleryDto>
+<div class="container-xxl py-5 px-0">
+    <div class="row g-0">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="@item.ImageUrl" data-lightbox="gallery">
+                            <img class="img-fluid" src="@item.ImageUrl" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="@item.ImageUrl2" data-lightbox="gallery">
+                            <img class="img-fluid" src="@item.ImageUrl2" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+        
+       
+    </div>
+</div>

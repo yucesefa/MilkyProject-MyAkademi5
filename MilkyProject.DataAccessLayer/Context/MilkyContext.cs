@@ -23,5 +23,6 @@ namespace MilkyProject.DataAccessLayer.Context
         public DbSet<Member> Members { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Gallery> Galleries { get; set; }
     }
 }

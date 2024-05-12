@@ -1,7 +1,8 @@
-﻿namespace MilkyProject.WebUI.Dtos.ProductDtos
+﻿namespace MilkyProject.WebUI.Dtos.Product
 {
-    public class CreateProductDto
+    public class ResultProductDto
     {
+        public int productId { get; set; }
         public string productName { get; set; }
         public decimal oldPrice { get; set; }
         public decimal newPrice { get; set; }

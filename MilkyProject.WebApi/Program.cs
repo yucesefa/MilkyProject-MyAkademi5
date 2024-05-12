@@ -17,6 +17,21 @@ builder.Services.AddScoped<ISliderDal, EfSliderDal>();
 builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<IProductDal, EfProductDal>();
 
+builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
+
+builder.Services.AddScoped<IMemberDal, EfMemberDal>();
+builder.Services.AddScoped<IMemberService, MemberManager>();
+
+builder.Services.AddScoped<IGalleryDal, EfGalleryDal>();
+builder.Services.AddScoped<IGalleryService, GalleryManager>();
+
+builder.Services.AddScoped<IServiceDal, EfServiceDal>();
+builder.Services.AddScoped<IServiceService, ServiceManager>();
+
+builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+builder.Services.AddScoped<IAboutService, AboutManager>();
+
 builder.Services.AddDbContext<MilkyContext>();
 
 builder.Services.AddControllers();

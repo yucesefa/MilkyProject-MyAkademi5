@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MilkyProject.WebUI.Dtos;
 using Newtonsoft.Json;
 using System.Text;
+using MilkyProject.WebUI.Dtos.Category;
 
-
-using MilkyProject.DtoLayer.CategoryDtos;
-using MilkyProject.WebUI.Dtos.CategoryDtos;
 
 namespace MilkyProject.WebUI.Controllers
 {

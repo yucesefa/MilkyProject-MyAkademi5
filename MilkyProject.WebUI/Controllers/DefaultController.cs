@@ -2,12 +2,10 @@
 
 namespace MilkyProject.WebUI.Controllers
 {
-    public class ProductController : Controller
+    public class DefaultController : Controller
     {
-
         public IActionResult Index()
         {
-           
             return View();
         }
     }

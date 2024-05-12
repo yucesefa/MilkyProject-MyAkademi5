@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MilkyProject.DtoLayer.CategoryDtos
+namespace MilkyProject.WebUI.Dtos.Category
 {
     public class CreateCategoryDto
     {

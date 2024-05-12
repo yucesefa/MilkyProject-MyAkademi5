@@ -1,6 +1,6 @@
 ﻿using MilkyProject.EntityLayer.Concrete;
 
-namespace MilkyProject.WebUI.Dtos.ProductDtos
+namespace MilkyProject.WebUI.Dtos.Product
 {
     public class ResultProductWithCategoryDto
     {
