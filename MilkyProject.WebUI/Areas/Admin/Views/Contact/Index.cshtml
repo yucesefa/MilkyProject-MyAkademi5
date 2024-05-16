@@ -1,0 +1,54 @@
+﻿@model List<MilkyProject.WebUI.Dtos.Contact.ResultContactDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card shadow">
+            <div class="card-header border-0">
+                <h3 class="mb-0">
+                    Gelen Mesajlar
+
+                </h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Isim</th>
+                            <th scope="col">Mail Adresi</th>
+                            <th scope="col">Konu</th>
+                            <th scope="col">Mesaj</th>
+                            <th scope="col">Sil</th>
+                            <th scope="col">Görüntüle</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td>
+                                    @count
+                                </td>
+                                <td>@item.Name</td>
+                                <td>@item.Email</td>
+                                <td>@item.Subject</td>
+                                <td>@item.Description</td>
+
+                                <td><a href="/Admin/Contact/DeleteMessage/@item.Id" class="btn btn-warning">Sil</a></td>
+                                <td><a href="/Admin/Contact/DetailContact/@item.Id" class="btn btn-dark">Görüntüle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
