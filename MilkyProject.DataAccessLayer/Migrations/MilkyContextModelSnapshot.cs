@@ -107,6 +107,9 @@ namespace MilkyProject.DataAccessLayer.Migrations
                     b.Property<string>("CategoryName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");

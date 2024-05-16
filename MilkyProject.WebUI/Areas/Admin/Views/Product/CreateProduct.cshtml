@@ -1,0 +1,47 @@
+﻿@model MilkyProject.WebUI.Dtos.Product.CreateProductDto
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="col">
+        <div class="card shadow">
+            <div class="card-header border-0">
+                <h3 class="mb-0">Yeni Ürün Girişi</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                    <tbody>
+                        <form method="post">
+                            <div classs="container">
+                                <br /><br />
+                                <label>Ürün Adu</label>
+                                <input type="text" asp-for="productName" class="form-control" />
+                            </div>
+                            <br />
+                            <label>Eski Fiyat</label>
+                            <input type="text" asp-for="oldPrice" class="form-control" />
+                            <br />
+                            <label>Yeni Fiyat</label>
+                            <input type="text" asp-for="newPrice" class="form-control" />
+                            <br />
+                            <label>Görsel</label>
+                            <input type="text" asp-for="imageUrl" class="form-control" />
+                            <br />
+                            <label>Durum</label>
+                            <input type="text" asp-for="status" class="form-control" />
+                            <br />
+                            <label>Kategori Seçin</label>
+                                @Html.DropDownListFor(x => x.categoryid, (List<SelectListItem>)ViewBag.CategoryList, new { @class = "form-control" })
+                            <br />
+                            <button class="btn btn-primary">
+                                Ürünü Ekle
+                            </button>
+                        </form>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

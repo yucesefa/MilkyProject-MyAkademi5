@@ -2,10 +2,12 @@
 {
     public class CreateProductDto
     {
-        public string productName { get; set; }
+        public int productid { get; set; }
+        public string? productName { get; set; }
         public decimal oldPrice { get; set; }
         public decimal newPrice { get; set; }
-        public string imageUrl { get; set; }
+        public string? imageUrl { get; set; }
         public bool status { get; set; }
+        public int? categoryid { get; set; }
     }
 }
