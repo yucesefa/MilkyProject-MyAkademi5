@@ -37,7 +37,7 @@ builder.Services.AddScoped<IContactDal, EfContactDal>();
 builder.Services.AddScoped<IContactService, ContactManager>();
 
 builder.Services.AddDbContext<MilkyContext>();
-//builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<MilkyContext>();   
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<MilkyContext>();   
 
 builder.Services.AddControllers();
 builder.Services.AddControllersWithViews()
