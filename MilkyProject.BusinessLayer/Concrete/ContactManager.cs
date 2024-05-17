@@ -28,6 +28,11 @@ namespace MilkyProject.BusinessLayer.Concrete
             return _contactDal.GetById(id); 
         }
 
+        public int TGetContactCount()
+        {
+            return _contactDal.GetContactCount();
+        }
+
         public List<Contact> TGetListAll()
         {
             return _contactDal.GetListAll();

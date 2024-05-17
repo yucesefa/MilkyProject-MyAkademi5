@@ -20,5 +20,10 @@ namespace MilkyProject.WebApi.Controllers
             var values = _memberService.TGetListAll();
             return Ok(values);
         }
+        [HttpGet("GetMemberCount")]
+        public IActionResult GetMemberCount()
+        {
+            return Ok(_memberService.TGetMemberCount());
+        }
     }
 }

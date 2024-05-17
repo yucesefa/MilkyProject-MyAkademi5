@@ -9,5 +9,6 @@ namespace MilkyProject.DataAccessLayer.Abstract
 {
     public interface IMemberDal : IGenericDal<Member>
     {
+        public int GetMemberCount();
     }
 }

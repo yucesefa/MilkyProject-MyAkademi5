@@ -9,5 +9,6 @@ namespace MilkyProject.BusinessLayer.Abstract
 {
     public interface IMemberService : IGenericService<Member>
     {
+        public int TGetMemberCount();
     }
 }

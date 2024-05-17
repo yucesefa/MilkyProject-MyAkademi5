@@ -33,6 +33,11 @@ namespace MilkyProject.BusinessLayer.Concrete
             return _memberDal.GetListAll();
         }
 
+        public int TGetMemberCount()
+        {
+            return _memberDal.GetMemberCount();
+        }
+
         public void TInsert(Member entity)
         {
             _memberDal.Insert(entity);

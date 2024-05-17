@@ -15,5 +15,11 @@ namespace MilkyProject.DataAccessLayer.EntityFramework
         public EfContactDal(MilkyContext context) : base(context)
         {
         }
+
+        public int GetContactCount()
+        {
+            var context = new MilkyContext();
+            return context.Contacts.Count();
+        }
     }
 }

@@ -9,6 +9,6 @@ namespace MilkyProject.DataAccessLayer.Abstract
 {
     public interface ICategoryDal : IGenericDal<Category>
     {
-        int GetCategoryCount();
+       public int GetCategoryCount();
     }
 }

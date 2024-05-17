@@ -15,5 +15,11 @@ namespace MilkyProject.DataAccessLayer.EntityFramework
         public EfMemberDal(MilkyContext context) : base(context)
         {
         }
+
+        public int GetMemberCount()
+        {
+            var context = new MilkyContext();
+            return context.Members.Count();
+        }
     }
 }

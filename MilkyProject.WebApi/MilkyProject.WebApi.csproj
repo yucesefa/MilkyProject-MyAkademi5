@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MilkyProject.BusinessLayer\MilkyProject.BusinessLayer.csproj" />
+    <ProjectReference Include="..\MilkyProject.WebUI\MilkyProject.WebUI.csproj" />
   </ItemGroup>
 
 </Project>
